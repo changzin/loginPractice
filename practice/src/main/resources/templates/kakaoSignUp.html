@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>카카오 회원은 닉네임만 적으면 로그인할 수 있습니다.</h1>
+    <form action="/signUpWithKakao" method="post">
+        <input type="text" name="nickName">
+        <input type="hidden" name="kakaoId" th:value="${kakaoId}"/>
+        <input type="button" value="회원가입하기">
+    </form>
+</body>
+</html>
